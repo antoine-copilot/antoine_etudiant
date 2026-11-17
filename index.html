@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17251c">
+  <meta name="description" content="La Lune & le Lierre : une table féerique au cœur d'une forêt enchantée.">
+  <title>La Lune & le Lierre — Une table enchantée</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="topline">Une parenthèse enchantée, au bout du sentier <span aria-hidden="true">✦</span></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="La Lune et le Lierre, accueil">
+      <span class="brand-mark" aria-hidden="true">☾</span>
+      <span>La Lune <i>&</i> le Lierre</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+      <span></span><span></span>
+    </button>
+    <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+      <a class="active" href="index.html">Le lieu</a>
+      <a href="carte.html">La carte</a>
+      <a class="nav-booking" href="#reservation">Réserver une table <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image" role="img" aria-label="Salle de restaurant chaleureuse à la lumière des bougies"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="sparkle" aria-hidden="true">✧</span> Restaurant & jardin secret · Depuis 1924</p>
+        <h1>La magie<br>est <em>à table.</em></h1>
+        <p class="hero-copy">Au creux d'une forêt qui murmure, une cuisine de saison à savourer sous les étoiles.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="carte.html">Découvrir la carte <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="#histoire">Notre histoire <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <div class="hero-caption"><span class="caption-line"></span> Clairière des Brumes, à 12 min du village</div>
+      <div class="hero-side-note" aria-hidden="true">Nourrir le merveilleux</div>
+    </section>
+
+    <section class="intro section-wrap" id="histoire">
+      <div class="intro-heading">
+        <p class="eyebrow eyebrow-dark">La forêt nous a soufflé une idée</p>
+        <h2>Un refuge pour<br>les <em>rêveurs.</em></h2>
+      </div>
+      <div class="intro-copy">
+        <p class="lead">Il suffit de suivre les lanternes pour trouver notre maison. Ici, les légumes viennent du jardin, les recettes suivent les saisons et le temps ralentit juste assez.</p>
+        <p>La Lune & le Lierre est une table vivante, imaginée pour les longues conversations et les petites merveilles. Prenez place près du feu, ou sous les branches quand la nuit est douce.</p>
+        <a class="underlined-link" href="#reservation">Venez comme vous êtes <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="experience">
+      <div class="experience-image" role="img" aria-label="Table dressée dans un jardin verdoyant"></div>
+      <div class="experience-card">
+        <p class="eyebrow">Au fil des saisons</p>
+        <h2>Le jardin<br>s'invite <em>à table.</em></h2>
+        <p>Herbes cueillies à l'aube, fleurs comestibles et trésors du potager composent une cuisine généreuse, inspirée par le vivant.</p>
+        <a class="button button-outline" href="carte.html">Voir notre menu <span aria-hidden="true">→</span></a>
+        <span class="card-flower" aria-hidden="true">✿</span>
+      </div>
+    </section>
+
+    <section class="reservation section-wrap" id="reservation">
+      <div class="reservation-copy">
+        <p class="eyebrow eyebrow-dark">La clairière vous attend</p>
+        <h2>Gardons-vous<br>une <em>place ?</em></h2>
+        <p>Pour un dîner aux chandelles, un déjeuner au jardin ou une occasion à célébrer, nous serons heureux de vous accueillir.</p>
+        <p class="opening"><span aria-hidden="true">◷</span> Du mercredi au dimanche · 12h–14h & 19h–22h</p>
+      </div>
+      <form class="booking-form">
+        <label>
+          Votre nom
+          <input name="name" autocomplete="name" placeholder="Comment vous appeler ?" required>
+        </label>
+        <div class="form-row">
+          <label>
+            Votre adresse e-mail
+            <input name="email" type="email" autocomplete="email" placeholder="vous@exemple.fr" required>
+          </label>
+          <label>
+            Nombre de convives
+            <select name="guests" required>
+              <option value="2">2 personnes</option>
+              <option value="1">1 personne</option>
+              <option value="3">3 personnes</option>
+              <option value="4">4 personnes</option>
+              <option value="5">5 personnes</option>
+              <option value="6">6 personnes</option>
+            </select>
+          </label>
+        </div>
+        <button class="button button-dark" type="submit">Demander une réservation <span aria-hidden="true">→</span></button>
+        <p class="form-note">Démonstration : ce formulaire n’envoie pas encore de réservation.</p>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">☾</span><span>La Lune <i>&</i> le Lierre</span></a>
+    <p>Un peu de merveilleux, tout simplement.</p>
+    <div class="footer-meta"><span>Clairière des Brumes</span><span>© 2026 · Fait avec soin et une pincée de magie</span></div>
+  </footer>
+</body>
+</html>

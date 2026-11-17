@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17251c">
+  <meta name="description" content="Découvrez la carte de saison de La Lune & le Lierre, cuisine végétale et généreuse au cœur de la forêt.">
+  <title>La carte — La Lune & le Lierre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="topline">Une parenthèse enchantée, au bout du sentier <span aria-hidden="true">✦</span></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="La Lune et le Lierre, accueil">
+      <span class="brand-mark" aria-hidden="true">☾</span>
+      <span>La Lune <i>&</i> le Lierre</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+      <span></span><span></span>
+    </button>
+    <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+      <a href="index.html">Le lieu</a>
+      <a class="active" href="carte.html">La carte</a>
+      <a class="nav-booking" href="index.html#reservation">Réserver une table <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="menu-hero">
+      <div class="menu-hero-inner">
+        <p class="eyebrow"><span class="sparkle" aria-hidden="true">✧</span> Cueilli, mijoté, partagé</p>
+        <h1>La carte<br><em>des saisons.</em></h1>
+        <p>Une cuisine du jardin, libre et inspirée. Les plats changent au gré des récoltes et des trouvailles de notre marché.</p>
+        <a class="text-link" href="#menu">Descendre à table <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="menu-hero-art" aria-hidden="true">
+        <div class="moon"></div>
+        <div class="menu-art-label">Printemps<br><span>en clairière</span></div>
+        <span class="art-star star-one">✦</span><span class="art-star star-two">✧</span><span class="art-star star-three">✧</span>
+      </div>
+    </section>
+
+    <section class="menu-section section-wrap" id="menu">
+      <div class="menu-intro">
+        <p class="eyebrow eyebrow-dark">Le menu de la maison</p>
+        <h2>Les bonnes choses<br>prennent <em>leur temps.</em></h2>
+        <p>Produits locaux, cuisine faite maison et assiettes à partager. Les options végétariennes sont indiquées sur la carte ; faites-nous signe pour toute allergie.</p>
+      </div>
+      <div class="menu-controls" role="group" aria-label="Filtrer la carte">
+        <button class="filter-chip active" type="button" data-filter="all" aria-pressed="true">Tout le menu</button>
+        <button class="filter-chip" type="button" data-filter="entree" aria-pressed="false">À partager</button>
+        <button class="filter-chip" type="button" data-filter="plat" aria-pressed="false">Plats</button>
+        <button class="filter-chip" type="button" data-filter="dessert" aria-pressed="false">Douceurs</button>
+      </div>
+      <div class="menu-grid">
+        <article class="dish-card" data-category="entree">
+          <div class="dish-illustration dish-herbs" aria-hidden="true"><span>❋</span></div>
+          <div class="dish-info"><div class="dish-title"><h3>Le panier du sous-bois</h3><span>14 €</span></div><p>Champignons rôtis, crème de noisette, herbes fraîches et pain au levain.</p><span class="dish-tag">À partager · Végétarien</span></div>
+        </article>
+        <article class="dish-card" data-category="entree">
+          <div class="dish-illustration dish-soup" aria-hidden="true"><span>◌</span></div>
+          <div class="dish-info"><div class="dish-title"><h3>Velouté des premières pousses</h3><span>12 €</span></div><p>Petits pois du jardin, menthe douce, éclats de fèves et huile de feuille.</p><span class="dish-tag">À partager · Végétarien</span></div>
+        </article>
+        <article class="dish-card" data-category="plat">
+          <div class="dish-illustration dish-pasta" aria-hidden="true"><span>⌘</span></div>
+          <div class="dish-info"><div class="dish-title"><h3>Ravioles de la lune rousse</h3><span>24 €</span></div><p>Ravioles maison, ricotta fermière, sauge croustillante et beurre noisette.</p><span class="dish-tag">Plat · Végétarien</span></div>
+        </article>
+        <article class="dish-card" data-category="plat">
+          <div class="dish-illustration dish-root" aria-hidden="true"><span>✿</span></div>
+          <div class="dish-info"><div class="dish-title"><h3>La récolte du potager</h3><span>22 €</span></div><p>Légumes de saison rôtis, petit épeautre crémeux, jus au thym sauvage.</p><span class="dish-tag">Plat · Végétalien</span></div>
+        </article>
+        <article class="dish-card" data-category="dessert">
+          <div class="dish-illustration dish-cake" aria-hidden="true"><span>❀</span></div>
+          <div class="dish-info"><div class="dish-title"><h3>Nuage de fleurs blanches</h3><span>11 €</span></div><p>Pavlova légère, fraises des bois, crème infusée à la fleur de sureau.</p><span class="dish-tag">Douceur · Sans gluten</span></div>
+        </article>
+        <article class="dish-card" data-category="dessert">
+          <div class="dish-illustration dish-honey" aria-hidden="true"><span>✧</span></div>
+          <div class="dish-info"><div class="dish-title"><h3>Le miel du vieux chêne</h3><span>10 €</span></div><p>Crème prise au miel, sablé de sarrasin et pommes doucement confites.</p><span class="dish-tag">Douceur · Végétarien</span></div>
+        </article>
+      </div>
+      <p class="menu-footnote">La carte évolue régulièrement selon les récoltes. Prix nets, service compris.</p>
+    </section>
+
+    <section class="menu-cta">
+      <span class="cta-sparkle" aria-hidden="true">✧</span>
+      <p class="eyebrow">La table est presque prête</p>
+      <h2>Il ne manque<br>plus que <em>vous.</em></h2>
+      <a class="button button-light" href="index.html#reservation">Réserver une table <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">☾</span><span>La Lune <i>&</i> le Lierre</span></a>
+    <p>Un peu de merveilleux, tout simplement.</p>
+    <div class="footer-meta"><span>Clairière des Brumes</span><span>© 2026 · Fait avec soin et une pincée de magie</span></div>
+  </footer>
+</body>
+</html>
